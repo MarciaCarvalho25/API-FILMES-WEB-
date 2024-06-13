@@ -1,0 +1,64 @@
+# Music API
+Uma API RESTful para gerenciamento de músicas e artistas sertanejos, 
+construída utilizando Node.js, Express, Sequelize, dotenv e MySQL.
+
+
+-- Testando as Rotas da API --
+Músicas
+
+Criar uma nova música
+Endpoint: POST /api/musicas
+{
+  "titulo": "Música Sertaneja",
+  "genero": "Sertanejo",
+  "ano": 2023
+}
+
+Obter todas as músicas
+Endpoint: GET /api/musicas
+Obter uma música específica
+Endpoint: GET /api/musicas/:id
+
+Atualizar uma música específica
+Endpoint: PUT /api/musicas/:id
+Exemplo de corpo da requisição:
+json
+{
+  "titulo": "Novo Título",
+  "genero": "Novo Gênero",
+  "ano": 2024
+}
+
+Deletar uma música específica
+Endpoint: DELETE /api/musicas/:id
+
+Artistas
+Criar um novo artista
+
+Endpoint: POST /api/artistas
+Exemplo de corpo da requisição:
+json
+{
+  "nome": "Artista Sertanejo",
+  "nacionalidade": "Brasileira"
+}
+Obter todos os artistas
+Endpoint: GET /api/artistas
+
+Obter um artista específico
+Endpoint: GET /api/artistas/:id
+
+Atualizar um artista específico
+Endpoint: PUT /api/artistas/:id
+Exemplo de corpo da requisição:
+json
+{
+  "nome": "Novo Nome",
+  "nacionalidade": "Nova Nacionalidade"
+}
+
+Deletar um artista específico
+Endpoint: DELETE /api/artistas/:id
+
+## Testei com Insomnia ##
+
